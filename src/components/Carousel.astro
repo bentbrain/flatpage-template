@@ -1,0 +1,10 @@
+---
+export interface Props {
+	slug: string;
+	sortBy: string;
+}
+const { slug, sortBy } = Astro.props;
+---
+
+<div class="product-carousel-widget" data-collection-slug={slug}
+data-order-by={sortBy}></div>

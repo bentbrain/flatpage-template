@@ -1,0 +1,18 @@
+---
+export interface Props {
+	title: string;
+	href: string;
+}
+const { href, title } = Astro.props;
+---
+
+<a href={href}>
+	<button style="color: #ed193a; margin-left: auto; margin-bottom: 0.5rem; " class="branded-button branded-button--account btn-new-address">
+	  <span class="branded-button-label" style="text-transform: uppercase;">{title}</span>
+	  <span class="branded-icon-wrapper">
+		<svg class="branded-icon ksig-icon">
+		  <use xlink:href="#icon-arrow-right"></use>
+		</svg>
+	  </span>
+	</button>
+</a>
